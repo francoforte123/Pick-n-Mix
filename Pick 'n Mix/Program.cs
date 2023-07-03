@@ -1,5 +1,5 @@
 ﻿Console.WriteLine("inserisci qualcosa all'interno della lista:");
-List<object> ListOfValue = new();
+ArrayList listOfValue = new ArrayList();
 int i = 0;
 
 while (i <= ListOfValue.Count)
