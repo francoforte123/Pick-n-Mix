@@ -1,25 +1,20 @@
-﻿Console.WriteLine("inserisci qualcosa all'interno della lista:");
-ArrayList listOfValue = new ArrayList();
-int i = 0;
+using System.Collections;
 
-while (i <= ListOfValue.Count)
+Console.WriteLine("inserisci qualcosa all'interno della lista:");
+ArrayList listOfValue = new()
 {
-    object Input = Console.ReadLine();
-    ListOfValue.Add(Input);
-    i++;
-    
-    if(ListOfValue.Count == 10)
-    {
-        break;
-    }
-}
+    "query", 
+    12, 
+    13.34,
+    "Marco", 
+    "Luca",
+    354,
+    3.14,
+    2.72,
+    3
+};
 
-Console.WriteLine("-------------------------------------");
-
-foreach(object x in ListOfValue)
+foreach (object x in listOfValue)
 {
     Console.WriteLine(x);
 }
-
-
-
